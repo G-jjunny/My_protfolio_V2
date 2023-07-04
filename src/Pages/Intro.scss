@@ -1,0 +1,51 @@
+.bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("../Image/main-bg.png"); */
+  background-image: url("../Image/space-bg.png");
+  background-color: var(--main-color);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.moon {
+  width: 60vw;
+  height: auto;
+  position: absolute;
+  top: calc(50% - 30vw);
+  left: calc(50% - 30vw);
+  animation: spin 240s linear infinite;
+  transform-origin: 50% 50%;
+}
+.bgLeft {
+  height: 100vh;
+}
+.cloud {
+  min-width: 500px;
+  width: 80vw;
+  height: auto;
+  position: absolute;
+  top: calc(50%);
+  right: 0;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 500px) {
+  .moon {
+    width: 80vh;
+    height: 80vh;
+    top: calc(50% - 40vh);
+    left: calc(50% - 40vh);
+  }
+  .cloud {
+    width: auto;
+    height: 50vh;
+    right: -50vw;
+    bottom: 10vh;
+  }
+}

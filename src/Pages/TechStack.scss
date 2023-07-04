@@ -1,0 +1,62 @@
+.bg-area {
+  //   position: absolute;
+  position: relative;
+  //   top: 5rem;
+  background-image: url("../Image/tech-stack.png");
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  z-index: 0;
+  border-radius: 5px;
+  //   align-items: end;
+  h1 {
+    font-weight: 800;
+    display: inline-block;
+    position: absolute;
+    bottom: -1rem;
+    // left: -1rem;
+  }
+}
+.stack {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-weight: 700;
+  }
+  .exp {
+    margin: 10px 0;
+    li {
+      list-style: none;
+      margin-left: 15px;
+      position: relative;
+      margin: 20px 0;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 6px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #36e0ff;
+      //   border-radius: 2px;
+      opacity: 0.2;
+    }
+  }
+  .tech-group {
+    display: flex;
+    flex-wrap: wrap;
+    .tech {
+      font-size: 0.8rem;
+      display: inline-block;
+      padding: 4px 8px;
+      border: 2px solid rgba($color: #36e0ff, $alpha: 0.2);
+      color: var(--main-green);
+      border-radius: 15px;
+      margin: 10px 15px 10px 0;
+    }
+  }
+}
