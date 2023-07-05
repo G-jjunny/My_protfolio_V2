@@ -47,6 +47,7 @@
     }
   }
   .tech-group {
+    max-width: 850px;
     display: flex;
     flex-wrap: wrap;
     .tech {
@@ -56,7 +57,7 @@
       border: 2px solid rgba($color: #36e0ff, $alpha: 0.2);
       color: var(--main-green);
       border-radius: 15px;
-      margin: 0 15px 0 0;
+      margin: 0 15px 10px 0;
     }
   }
 }
