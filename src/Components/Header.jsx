@@ -17,8 +17,8 @@ const Head = styled.div`
     display: flex;
     justify-content: space-between;
     h4 {
-      /* text-shadow: ${(props) =>
-        props.isVisiable ? "none" : "0px 0px 5px #ffffff"}; */
+      text-shadow: ${(props) =>
+        props.isVisiable ? "none" : "0px 0px 5px #ffffff"};
     }
 
     h3 {
@@ -70,8 +70,12 @@ function Header({ scroll }) {
   //     setIsVisiable(false);
   //   }
   // }, [scroll, isVisiable]);
+  // useEffect(() => {
+  //   console.log(scroll);
+  // }, [scroll]);
   return (
     <Head
+      scroll={scroll}
       style={
         {
           // opacity: `${isVisiable ? "0.2" : "0"} `
@@ -84,6 +88,7 @@ function Header({ scroll }) {
             style={{
               display: "inline-block",
               fontWeight: "700",
+              // textShadow: ${scroll ? "" : ""}
             }}
           >
             G_JJUNNY

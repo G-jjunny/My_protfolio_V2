@@ -78,7 +78,10 @@ function TechStack() {
         <div className="stack">
           <h3>Learning.</h3>
           <ul className="exp">
-            <li>향후 (어쩌고 저쩌고) TypeScript를 학습중입니다.</li>
+            <li>
+              추가적으로 정적 타입을 지원하여 코드의 안정성과 가독성을
+              향상시키기 위하여 TypeScript를 학습중입니다.
+            </li>
             <li>
               또한 Axios와 같은 HTTP 클라이언트를 통해 서버와의 통신을 처리를
               하는 능력을 기르기 위하여 REST API 통신을 학습하는 중에 있습니다.
