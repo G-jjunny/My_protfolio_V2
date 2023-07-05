@@ -2,7 +2,6 @@ import React from "react";
 import { styled } from "styled-components";
 
 const ImgBox = styled.div`
-  margin: 10px;
   width: 600px;
   height: 600px;
   box-sizing: border-box;
@@ -32,7 +31,7 @@ const ImgBox = styled.div`
   }
 `;
 
-function TestImage() {
+function TestImage({ isView }) {
   return (
     <ImgBox>
       {/* 1번 */}

@@ -11,7 +11,7 @@ body {
   }
   section {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     // display: flex;
     background-color: var(--main-color);
   }
@@ -19,6 +19,12 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+  }
+  .card {
+    width: min(10rem, 100%);
+  }
+  .card-1 {
+    --bg-image: url("./Image/jjunnyjpg.jpg");
   }
   @keyframes shake {
     10% {

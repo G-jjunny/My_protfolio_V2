@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import Jun from "../Image/jjunnyjpg.jpg";
+import Profile from "../Image/profile.jpg";
 const MainArea = styled.div`
   width: 100vw;
   height: 100vh;
@@ -40,7 +41,7 @@ function Main() {
     <>
       <MainArea>
         <div className="contents">
-          <img src={Jun} alt="profile" />
+          <img src={Profile} alt="profile" />
           <div className="text-group">
             <h1
               style={{ fontWeight: 800 }}

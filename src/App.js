@@ -8,6 +8,7 @@ import Main from "./Pages/Main";
 import TechStack from "./Pages/TechStack";
 import Dots from "./Components/Dots";
 import useWheelHandler from "./hooks/useWheelHandler";
+import Test from "./Pages/Test";
 
 function App() {
   const [scroll, setScroll] = useState(true);
@@ -37,8 +38,8 @@ function App() {
   return (
     <>
       <Header scroll={scroll} />
-      {/* <div className="outer" ref={outerDivRef}> */}
-      {/* <Dots scrollIndex={scrollIndex} /> */}
+      {/* <div className="outer" ref={outerDivRef}>
+        <Dots scrollIndex={scrollIndex} /> */}
       <section id="section1">
         <Intro scroll={scroll} />
       </section>
@@ -49,6 +50,9 @@ function App() {
       <div className="divider" />
       <section id="section3">
         <TechStack />
+      </section>
+      <section id="section4">
+        <Test />
       </section>
       {/* </div> */}
     </>

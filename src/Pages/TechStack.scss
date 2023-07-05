@@ -29,17 +29,17 @@
     margin: 10px 0;
     li {
       list-style: none;
-      margin-left: 15px;
       position: relative;
-      margin: 20px 0;
+      margin: 20px 0 20px 20px;
+      color: var(--bright);
     }
     li::before {
       content: "";
       position: absolute;
-      left: -10px;
+      left: -20px;
       top: 6px;
       display: block;
-      width: 5px;
+      width: 10px;
       height: 5px;
       background-color: #36e0ff;
       //   border-radius: 2px;
@@ -56,7 +56,7 @@
       border: 2px solid rgba($color: #36e0ff, $alpha: 0.2);
       color: var(--main-green);
       border-radius: 15px;
-      margin: 10px 15px 10px 0;
+      margin: 0 15px 0 0;
     }
   }
 }
