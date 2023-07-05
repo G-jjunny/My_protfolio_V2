@@ -35,8 +35,8 @@ function TechStack() {
               노력을 하고있습니다.
             </li>
             <li>
-              또한 React의 생태계를 풍부하게 활용하여 Material-UI, Ant Design
-              등의 UI 라이브러리를 사용한 경험이 있습니다.
+              또한 React의 생태계를 풍부하게 활용하여 Bootstrap, Material-UI,
+              Ant Design 등의 UI 라이브러리를 사용한 경험이 있습니다.
             </li>
             <li>
               CSS, SCSS, Styled-Components 등을 통해 디자인 결과물과 흡사하게
@@ -52,6 +52,9 @@ function TechStack() {
             <div className="tech">#React.js</div>
             <div className="tech">#Node.js</div>
             <div className="tech">#Redux</div>
+            <div className="tech">#MUI</div>
+            <div className="tech">#Bootstrap</div>
+            <div className="tech">#Ant Design</div>
           </div>
         </div>
         <div className="stack">
