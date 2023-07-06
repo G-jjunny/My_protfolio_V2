@@ -34,6 +34,26 @@ const MainArea = styled.div`
       }
     }
   }
+  @media screen and (max-width: 1000px) {
+    .contents {
+      /* flex-direction: column; */
+      /* align-items: start; */
+      margin: 0 auto 80px;
+      position: relative;
+      img {
+        width: 200px;
+        height: 266px;
+      }
+      .text-group {
+        padding-left: 2rem;
+        .bottom {
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
 `;
 
 function Main() {
@@ -60,7 +80,7 @@ function Main() {
               <br />
               협업과 유지보수에 좋은 코드를 짜기 위해 꾸준히 학습하고 있습니다.
             </h4>
-            <h4>
+            <h4 className="bottom">
               웹 개발은 혼자 하는 일이 아닌 만큼 사람들 간의{" "}
               <span>약속, 그리고 소통</span>이 중요하다고 생각합니다.
               <br />
