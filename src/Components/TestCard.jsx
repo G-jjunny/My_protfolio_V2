@@ -35,6 +35,14 @@ const Card = styled.div`
     transform: ${(props) =>
       props.isView ? "rotateY(0deg)" : "rotateY(-180deg)"};
   }
+  @media screen and (max-width: 500px) {
+    width: 95vw;
+    height: 95vw;
+    .front {
+      width: 95vw;
+      height: 95vw;
+    }
+  }
 `;
 
 function TestCard({ handleClick, isView }) {

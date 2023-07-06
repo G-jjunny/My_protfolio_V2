@@ -54,6 +54,13 @@ const OutTroArea = styled.div`
           width: 250px;
           margin-bottom: 20px;
         }
+        .text {
+          margin: 0;
+          h4 {
+            margin-top: 10px;
+            line-height: 20px;
+          }
+        }
       }
     }
   }

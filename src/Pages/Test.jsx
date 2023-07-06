@@ -7,7 +7,9 @@ const TestArea = styled.div`
   width: 100%;
   height: 100vh;
   color: #fff;
+  overflow: hidden;
   .contents {
+    overflow: hidden;
     height: 100%;
     display: flex;
     .card {

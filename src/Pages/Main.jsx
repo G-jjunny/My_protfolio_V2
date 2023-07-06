@@ -12,8 +12,8 @@ const MainArea = styled.div`
     height: fit-content;
     align-items: end;
     img {
-      width: 300px;
-      height: 400px;
+      width: 270px;
+      height: 360px;
       border-radius: 5px;
     }
     .text-group {

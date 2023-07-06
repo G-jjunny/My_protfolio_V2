@@ -29,6 +29,10 @@ const ImgBox = styled.div`
     top: 25%;
     left: 25%;
   }
+  @media screen and (max-width: 500px) {
+    width: 90vw;
+    height: 90vw;
+  }
 `;
 
 function TestImage({ isView }) {
