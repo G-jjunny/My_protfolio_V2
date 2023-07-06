@@ -54,6 +54,36 @@ const MainArea = styled.div`
       }
     }
   }
+  @media screen and (max-width: 500px) {
+    .contents {
+      flex-direction: column;
+      align-items: start;
+      margin: 0 auto;
+      position: relative;
+      img {
+        width: 100px;
+        height: auto;
+      }
+      .text-group {
+        padding-left: 0;
+        position: relative;
+        h1 {
+          position: absolute;
+          top: -30px;
+          left: 110px;
+        }
+        h4 {
+          line-height: 20px;
+          margin-top: 1rem;
+        }
+        .bottom {
+          position: relative;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
 `;
 
 function Main() {

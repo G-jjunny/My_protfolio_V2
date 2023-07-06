@@ -71,3 +71,22 @@ body::-webkit-scrollbar {
     }
   }
 }
+@media screen and (max-width: 500px) {
+  body {
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 0.8rem;
+    }
+    li {
+      font-size: 0.9rem;
+    }
+  }
+}

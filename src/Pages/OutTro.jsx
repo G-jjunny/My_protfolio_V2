@@ -33,6 +33,30 @@ const OutTroArea = styled.div`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .contents {
+      .group {
+        flex-direction: column;
+        align-items: start;
+        img {
+          width: 250px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .contents {
+      .group {
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 250px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 `;
 
 function OutTro() {

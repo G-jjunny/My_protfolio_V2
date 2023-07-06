@@ -23,7 +23,6 @@ const IntroArea = styled.div`
   position: absolute;
   top: 0;
   color: var(--main-white);
-
   display: flex;
   .text {
     opacity: 1;
@@ -38,6 +37,14 @@ const IntroArea = styled.div`
       font-weight: 400;
       text-shadow: none;
       margin-top: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .text {
+      font-size: 1.5rem;
+      .sub {
+        font-size: 0.8rem;
+      }
     }
   }
 `;
