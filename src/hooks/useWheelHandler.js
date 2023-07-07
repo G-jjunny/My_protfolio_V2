@@ -30,7 +30,7 @@ const useWheelHandler = (outerDivRef, setScrollIndex) => {
             behavior: "smooth",
           });
           setScrollIndex(3);
-        } else {
+        } else if (scrollTop >= pageHeight * 2 && scrollTop < pageHeight * 3) {
           // 현재 3페이지
           console.log("현재 3페이지, down");
           outerDivRef.current.scrollTo({
@@ -39,6 +39,15 @@ const useWheelHandler = (outerDivRef, setScrollIndex) => {
             behavior: "smooth",
           });
           setScrollIndex(3);
+        } else {
+          // 현재 4페이지
+          console.log("현재 4페이지, down");
+          outerDivRef.current.scrollTo({
+            top: pageHeight * 3 + DIVIDER_HEIGHT * 3,
+            left: 0,
+            behavior: "smooth",
+          });
+          setScrollIndex(4);
         }
       } else {
         // 스크롤 올릴 때

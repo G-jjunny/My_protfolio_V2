@@ -13,6 +13,7 @@ const Head = styled.div`
   z-index: 5;
   display: flex;
   align-items: center;
+  background-color: inherit;
   .contents {
     display: flex;
     justify-content: space-between;
@@ -74,21 +75,13 @@ function Header({ scroll }) {
   //   console.log(scroll);
   // }, [scroll]);
   return (
-    <Head
-      scroll={scroll}
-      style={
-        {
-          // opacity: `${isVisiable ? "0.2" : "0"} `
-        }
-      }
-    >
+    <Head scroll={scroll}>
       <div className="contents">
         <a href="/">
           <h4
             style={{
               display: "inline-block",
               fontWeight: "700",
-              // textShadow: ${scroll ? "" : ""}
             }}
           >
             G_JJUNNY

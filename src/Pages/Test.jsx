@@ -12,6 +12,7 @@ const TestArea = styled.div`
     overflow: hidden;
     height: 100%;
     display: flex;
+    position: relative;
     .card {
       margin: auto;
     }
