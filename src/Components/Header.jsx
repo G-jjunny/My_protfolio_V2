@@ -17,10 +17,6 @@ const Head = styled.div`
   .contents {
     display: flex;
     justify-content: space-between;
-    h4 {
-      text-shadow: ${(props) =>
-        props.isVisiable ? "none" : "0px 0px 5px #ffffff"};
-    }
 
     h3 {
       transition: all 0.5s;
@@ -62,7 +58,7 @@ const IconGroup = styled.div`
   }
 `;
 
-function Header({ scroll }) {
+function Header() {
   // const [isVisiable, setIsVisiable] = useState(false);
   // useEffect(() => {
   //   if (scroll) {
@@ -75,7 +71,7 @@ function Header({ scroll }) {
   //   console.log(scroll);
   // }, [scroll]);
   return (
-    <Head scroll={scroll}>
+    <Head>
       <div className="contents">
         <a href="/">
           <h4

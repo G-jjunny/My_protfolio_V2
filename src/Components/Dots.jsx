@@ -1,14 +1,29 @@
+import { styled } from "styled-components";
+
+const NavDots = styled.div`
+  position: fixed;
+  top: calc(50% - 50px);
+  left: 50px;
+  z-index: 10;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
 const Dot = ({ num, scrollIndex }) => {
   return (
     <div
       style={{
         width: 10,
         height: 10,
-        border: "1px solid black",
+        border: "1px solid var(--main-green)",
         borderRadius: 999,
-        backgroundColor: scrollIndex === num ? "black" : "transparent",
+        backgroundColor:
+          scrollIndex === num ? "var(--main-green)" : "transparent",
+        boxShadow: scrollIndex === num ? "0 0 8px var(--main-green)" : "none",
         transitionDuration: 1000,
-        transition: "background-color 0.5s",
+        // transition: "background-color 0.5s",
+        transition: "0.5s",
       }}
     ></div>
   );
@@ -16,7 +31,7 @@ const Dot = ({ num, scrollIndex }) => {
 
 const Dots = ({ scrollIndex }) => {
   return (
-    <div style={{ position: "fixed", top: "50%", right: 100 }}>
+    <NavDots>
       <div
         style={{
           display: "flex",
@@ -30,8 +45,10 @@ const Dots = ({ scrollIndex }) => {
         <Dot num={1} scrollIndex={scrollIndex}></Dot>
         <Dot num={2} scrollIndex={scrollIndex}></Dot>
         <Dot num={3} scrollIndex={scrollIndex}></Dot>
+        <Dot num={4} scrollIndex={scrollIndex}></Dot>
+        <Dot num={5} scrollIndex={scrollIndex}></Dot>
       </div>
-    </div>
+    </NavDots>
   );
 };
 

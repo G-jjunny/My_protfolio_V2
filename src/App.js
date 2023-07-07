@@ -12,37 +12,19 @@ import Test from "./Pages/Test";
 import OutTro from "./Pages/OutTro";
 
 function App() {
-  const [scroll, setScroll] = useState(true);
+  // const [scroll, setScroll] = useState(true);
   const outerDivRef = useRef();
   const [scrollIndex, setScrollIndex] = useState(1);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // 스크롤이 0일때 true값을 useState에 넣어줌
-      if (window.scrollY === 0) {
-        setScroll(true);
-        // console.log(scroll);
-      } else {
-        // 스크롤이 0보다 클 때
-        setScroll(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    // console.log(outerDivRef);
-    return () => {
-      window.removeEventListener("scroll", handleScroll); //clean up
-    };
-  }, []);
-
-  // useWheelHandler(outerDivRef, setScrollIndex);
+  useWheelHandler(outerDivRef, setScrollIndex);
 
   return (
     <>
-      <Header scroll={scroll} />
+      <Header />
       <div className="outer" ref={outerDivRef}>
         <Dots scrollIndex={scrollIndex} />
         <section id="section1">
-          <Intro scroll={scroll} />
+          <Intro scrollIndex={scrollIndex} />
         </section>
         <div className="divider" />
         <section id="section2">

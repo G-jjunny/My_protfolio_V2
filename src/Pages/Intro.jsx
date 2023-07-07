@@ -49,7 +49,7 @@ const IntroArea = styled.div`
   }
 `;
 
-function Intro({ scroll }) {
+function Intro({ scrollIndex }) {
   const [showPortfolio, setShowPortfolio] = useState(false);
 
   const handleWelcomeComplete = () => {
@@ -65,7 +65,7 @@ function Intro({ scroll }) {
       <div className="filter"></div>
       <IntroArea>
         <div className="text">
-          {scroll ? (
+          {scrollIndex === 1 ? (
             <TypingAnimation
               text={`G_JJUNNY`}
               onComplete={handleWelcomeComplete}
@@ -74,7 +74,7 @@ function Intro({ scroll }) {
           ) : (
             <>G_JJUNNY</>
           )}
-          {scroll ? (
+          {scrollIndex === 1 ? (
             <p className="sub animate__animated animate__fadeIn animate__delay-2s">
               Junior Front-end Developer
             </p>

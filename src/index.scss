@@ -14,12 +14,10 @@
   --bg-image: url("./Image/jjunnyjpg.jpg");
 }
 body {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Poppins", "Lato", "Noto Sans KR", sans-serif;
-  // font-family: "Noto Sans KR", sans-serif;
   max-width: 100vw;
-  // scroll-behavior: smooth;
   background-color: var(--main-color);
+  margin: 0;
   h1 {
     font-size: 3rem;
   }
