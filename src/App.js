@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header scrollIndex={scrollIndex} />
       <div className="outer" ref={outerDivRef}>
         <Dots scrollIndex={scrollIndex} />
         <section id="section1">

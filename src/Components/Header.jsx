@@ -17,7 +17,6 @@ const Head = styled.div`
   .contents {
     display: flex;
     justify-content: space-between;
-
     h3 {
       transition: all 0.5s;
     }
@@ -32,8 +31,8 @@ const IconGroup = styled.div`
   display: flex;
   /* font-size: 2rem; */
   .box {
-    position: relative;
     width: min-content;
+    position: relative;
     .icon {
       width: 1.5rem;
       height: 1.5rem;
@@ -45,7 +44,9 @@ const IconGroup = styled.div`
       opacity: 0;
       transition: all.5s;
       bottom: -20px;
+      /* bottom: 0; */
       color: var(--secondary);
+      z-index: 10;
     }
   }
   .box:hover .icon {
@@ -58,40 +59,41 @@ const IconGroup = styled.div`
   }
 `;
 
-function Header() {
-  // const [isVisiable, setIsVisiable] = useState(false);
-  // useEffect(() => {
-  //   if (scroll) {
-  //     setIsVisiable(true);
-  //   } else {
-  //     setIsVisiable(false);
-  //   }
-  // }, [scroll, isVisiable]);
-  // useEffect(() => {
-  //   console.log(scroll);
-  // }, [scroll]);
+function Header({ scrollIndex }) {
   return (
     <Head>
       <div className="contents">
         <a href="/">
-          <h4
-            style={{
-              display: "inline-block",
-              fontWeight: "700",
-            }}
-          >
-            G_JJUNNY
-          </h4>
+          {scrollIndex === 1 ? (
+            <h4
+              style={{
+                display: "inline-block",
+                fontWeight: "700",
+              }}
+            >
+              G_JJUNNY
+            </h4>
+          ) : (
+            <h4
+              style={{
+                display: "inline-block",
+                textShadow: "0 0 5px #fff ",
+                fontWeight: "700",
+              }}
+            >
+              G_JJUNNY
+            </h4>
+          )}
         </a>
         <IconGroup>
           <a
-            href="https://www.instagram.com/g_jjunny/"
+            href="https://my.surfit.io/w/577039384"
             target="_blank"
             rel="noreferrer"
           >
             <div className="box">
-              <InstagramIcon className="icon" />
-              <p style={{ left: "-10px" }}>Instagram</p>
+              <AccountCircleIcon className="icon" />
+              <p>Project</p>
             </div>
           </a>
           <a
@@ -104,16 +106,7 @@ function Header() {
               <p>Github</p>
             </div>
           </a>
-          <a
-            href="https://venerable-stardust-67904f.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="box">
-              <AccountCircleIcon className="icon" />
-              <p>Project</p>
-            </div>
-          </a>
+
           <a
             href="mailto:rudwns9551@naver.com"
             target="_blank"
@@ -121,7 +114,17 @@ function Header() {
           >
             <div className="box">
               <EmailIcon className="icon" />
-              <p style={{ left: "7px" }}>Email</p>
+              <p style={{}}>Email</p>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/g_jjunny/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="box">
+              <InstagramIcon className="icon" />
+              <p style={{ bottom: "-20px" }}>Instagram</p>
             </div>
           </a>
         </IconGroup>

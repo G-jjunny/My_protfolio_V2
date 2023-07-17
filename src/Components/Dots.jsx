@@ -5,7 +5,7 @@ const NavDots = styled.div`
   top: calc(50% - 50px);
   left: 50px;
   z-index: 10;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 `;
@@ -14,8 +14,8 @@ const Dot = ({ num, scrollIndex }) => {
   return (
     <div
       style={{
-        width: 10,
-        height: 10,
+        width: 8,
+        height: 8,
         border: "1px solid var(--main-green)",
         borderRadius: 999,
         backgroundColor:
