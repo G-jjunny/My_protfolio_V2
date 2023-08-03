@@ -58,16 +58,17 @@ const useWheelHandler = (outerDivRef, setScrollIndex) => {
             behavior: "smooth",
           });
           setScrollIndex(4);
-        } else {
-          // 현재 4페이지
-          console.log("현재 4페이지, down");
-          outerDivRef.current.scrollTo({
-            top: pageHeight * 4 + DIVIDER_HEIGHT * 4 + 400,
-            left: 0,
-            behavior: "smooth",
-          });
-          setScrollIndex(5);
         }
+        // else {
+        //   // 현재 4페이지
+        //   console.log("현재 4페이지, down");
+        //   outerDivRef.current.scrollTo({
+        //     top: pageHeight * 4 + DIVIDER_HEIGHT * 4 + 400,
+        //     left: 0,
+        //     behavior: "smooth",
+        //   });
+        //   setScrollIndex(5);
+        // }
       } else {
         // 스크롤 올릴 때
         if (scrollTop >= 0 && scrollTop < pageHeight) {

@@ -16,7 +16,12 @@ const Dot = ({ num, scrollIndex }) => {
       style={{
         width: 8,
         height: 8,
-        border: "1px solid var(--main-green)",
+        // width: scrollIndex === num ? "8" : "4",
+        // height: scrollIndex === num ? "8" : "4",
+        border:
+          scrollIndex === num
+            ? "1px solid var(--main-green)"
+            : "1px solid var(--secondary)",
         borderRadius: 999,
         backgroundColor:
           scrollIndex === num ? "var(--main-green)" : "transparent",
@@ -46,7 +51,7 @@ const Dots = ({ scrollIndex }) => {
         <Dot num={2} scrollIndex={scrollIndex}></Dot>
         <Dot num={3} scrollIndex={scrollIndex}></Dot>
         <Dot num={4} scrollIndex={scrollIndex}></Dot>
-        <Dot num={5} scrollIndex={scrollIndex}></Dot>
+        {/* <Dot num={5} scrollIndex={scrollIndex}></Dot> */}
       </div>
     </NavDots>
   );

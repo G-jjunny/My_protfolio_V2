@@ -34,9 +34,9 @@ function App() {
         <section id="section3">
           <TechStack />
         </section>
-        <section id="section4">
+        {/* <section id="section4">
           <Test />
-        </section>
+        </section> */}
         <section id="section5">
           <OutTro />
         </section>

@@ -87,7 +87,9 @@ function Header({ scrollIndex }) {
         </a>
         <IconGroup>
           <a
-            href="https://my.surfit.io/w/577039384"
+            // 아래 써핏링크는 Project component완성되면 변경 예정
+            // href="https://my.surfit.io/w/577039384"
+            href="https://venerable-stardust-67904f.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
